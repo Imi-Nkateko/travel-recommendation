@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>TravelVista | Your Dream Escape</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="home-background"></div>
+<div class="app-container">
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="logo-area">
+      <span class="logo-icon">✈️🌴</span>
+      <span class="site-name">TravelVista</span>
+    </div>
+    <div class="nav-links">
+      <a href="#" id="nav-home">Home</a>
+      <a href="#" id="nav-about">About Us</a>
+      <a href="#" id="nav-contact">Contact Us</a>
+    </div>
+    <!-- search area (only visible on home page) -->
+    <div class="search-area" id="searchContainer">
+      <input type="text" id="searchInput" placeholder="Search beaches, temples, countries...">
+      <button id="searchBtn">🔍 Search</button>
+      <button id="resetBtn">🗑️ Reset</button>
+    </div>
+  </nav>
+
+  <!-- ========== HOME PAGE ========== -->
+  <div id="homePage" class="page-card active-page">
+    <div class="hero-intro">
+      <h1>Explore beyond horizons</h1>
+      <p>Discover breathtaking beaches, sacred temples, and vibrant cities across the globe. <br> 
+      Your personalized travel companion — curated recommendations, unforgettable journeys.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="YouTube">🎥</a>
+      </div>
+    </div>
+    <!-- results section -->
+    <div id="resultsContainer" class="results-grid"></div>
+  </div>
+
+  <!-- ========== ABOUT US PAGE ========== -->
+  <div id="aboutPage" class="page-card hidden-page">
+    <h2>✨ About TravelVista</h2>
+    <p style="margin-top: 1rem; font-size: 1.1rem;">Founded in 2025, TravelVista delivers authentic travel insights and handpicked destinations. 
+    We believe that travel transforms lives, and our mission is to inspire wanderers to uncover hidden gems — from tropical shores to ancient temples. 
+    Our expert team curates only the finest recommendations to fuel your next adventure.</p>
+    
+    <h3 style="margin: 2rem 0 1rem 0;">🌟 Meet the Team</h3>
+    <div class="team-grid">
+      <div class="team-card"><h4>Elena Rodriguez</h4><div class="team-role">CEO & Founder</div><p>Travel visionary, 40+ countries explored</p></div>
+      <div class="team-card"><h4>Marcus Chen</h4><div class="team-role">Head of Curation</div><p>Cultural heritage specialist</p></div>
+      <div class="team-card"><h4>Priya Kapoor</h4><div class="team-role">Experience Designer</div><p>Creates immersive itineraries</p></div>
+      <div class="team-card"><h4>James O'Connor</h4><div class="team-role">Adventure Lead</div><p>Off-the-beaten-path expert</p></div>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT US PAGE ========== -->
+  <div id="contactPage" class="page-card hidden-page">
+    <h2>📬 Get in touch</h2>
+    <p style="margin-bottom: 1.2rem;">Have questions or need travel advice? Drop us a message — we’d love to hear from you!</p>
+    <form id="contactFormElem" class="contact-form">
+      <input type="text" id="contactName" placeholder="Your name" required>
+      <input type="email" id="contactEmail" placeholder="Email address" required>
+      <textarea id="contactMsg" placeholder="Write your message..."></textarea>
+      <button type="submit">✉️ Send message</button>
+    </form>
+    <div id="formFeedback" style="margin-top: 1rem; font-weight: 500;"></div>
+  </div>
+  <footer>✈️ TravelVista — where every journey begins</footer>
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
